@@ -1,16 +1,15 @@
-// Code your solutions in this file
-function countDown(num1) {
-    while (num1 >= 0) {
-        console.log(num1);
-        num1--;
-    }
-}
-
-function writeCards(recipient, eventName) {
+function writeCards(array, event) {
     let newArray = [];
-    for (let i = 0; i < recipient.length; i++) {
-        let thankYou = `Thank you, ${recipient[i]}, for the wonderful ${eventName} gift!`;
-        newArray.push(thankYou);
+    for (let i = 0; i < array.length; i++) {
+        newArray[i] = `Thank you, ${array[i]}, for the wonderful ${event} gift!`;
     }
     return newArray;
+}
+
+function countDown(integer) {
+    let number = integer;
+    while (number >= 0) {
+        console.log(number);
+        number--;
+    }
 }
